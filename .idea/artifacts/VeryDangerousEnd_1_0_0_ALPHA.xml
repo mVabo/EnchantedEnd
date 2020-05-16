@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VeryDangerousEnd 1.0.0-ALPHA">
+    <output-path>$USER_HOME$/Desktop/DangerousTest/Plugins</output-path>
+    <root id="archive" name="VeryDangerousEnd 1.0.0-ALPHA.jar">
+      <element id="module-output" name="VeryDangerousEnd" />
+      <element id="library" level="project" name="ProtocolLib" />
+    </root>
+  </artifact>
+</component>

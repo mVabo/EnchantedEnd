@@ -1,0 +1,34 @@
+#++++++++++++++++++
+#+    E  N  D     +
+#+  C O N F I G   +
+#++++++++++++++++++
+
+#Enable the  plugin?
+ee-enabled: true
+enable_end_gravity: true
+
+#Percentage chance of structures spawning
+coralGrass_chance: 0.4
+boulder_chance: 0.4
+spike_chance: 0.4
+randomShape_chance: 0.4
+wall_chance: 0.4
+floating_island_chance: 0.01
+
+#Mobs
+spawn_void_guardian: true
+
+#Spawn chance of mobs
+void_guardian_chance: 0.3
+
+#Custom mob names
+void_guardian: 'Void Guardian'
+
+
+#Which worlds to enable withers on
+wither_worlds:
+  -
+
+#Which worlds to effect enderdragon on
+enderDragon_worlds:
+  -
