@@ -8,11 +8,11 @@ ee-enabled: true
 enable_end_gravity: true
 
 #Percentage chance of structures spawning
-coralGrass_chance: 0.4
-boulder_chance: 0.4
-spike_chance: 0.4
-randomShape_chance: 0.4
-wall_chance: 0.4
+coralGrass_chance: 20
+boulder_chance: 20
+spike_chance: 20
+randomShape_chance: 20
+wall_chance: 20
 floating_island_chance: 0.01
 
 #Mobs

@@ -18,7 +18,7 @@ public class endWIElistener implements Listener {
     public void runNetherGenerator(WorldInitEvent event) {
         World w = event.getWorld();
         //System.out.println(utils.chat("&6checking if netherModule is enabled"));
-        if(plugin.getConfig().getBoolean("em-enabled")) {
+        if(plugin.getConfig().getBoolean("ee-enabled")) {
             if(isEnd(w)) {
                 event.getWorld().getPopulators().add(new endGenerator());
             }

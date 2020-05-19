@@ -73,20 +73,20 @@ public class endGenerator extends BlockPopulator {
         int cXOff = cX;
         int cZOff = cZ;
         int type = randor.nextInt(4);
-        if(randor.nextDouble() < plugin.getConfig().getDouble("coralGrass_chance")) {
+        if(randor.nextInt(100) < plugin.getConfig().getInt("coralGrass_chance")) {
             createCoralGrass(cXOff + rand.nextInt(2) + 6, cZOff + rand.nextInt(2) + 6, wor);
             createCoralGrass(cXOff + rand.nextInt(2) + 6, cZOff + rand.nextInt(2) + 6, wor);
         }
-        if(randor.nextDouble() < plugin.getConfig().getDouble("boulder_chance") && type==3) {
+        if(randor.nextInt(100) < plugin.getConfig().getInt("boulder_chance") && type==1) {
             createBoulder(cXOff + rand.nextInt(3) + 6, cZOff + rand.nextInt(3) + 6, wor);
         }
-        if(randor.nextDouble() < plugin.getConfig().getDouble("spike_chance") && (type==0 || type==2 || type==3)) {
+        if(randor.nextInt(100) < plugin.getConfig().getInt("spike_chance") && (type==0 || type==2 || type==3)) {
             createSpike2(cXOff + 7, cZOff + 7, wor);
         }
-        if(randor.nextDouble() < plugin.getConfig().getDouble("randomShape_chance") && type==1) {
+        if(randor.nextInt(100) < plugin.getConfig().getInt("randomShape_chance") && type==2) {
             randomShape(cXOff + rand.nextInt(7) + 3, cZOff + rand.nextInt(7) + 3, wor);
         }
-        if(randor.nextDouble() < plugin.getConfig().getDouble("wall_chance") && type==2) {
+        if(randor.nextDouble() < plugin.getConfig().getDouble("wall_chance") && type==3) {
             createWall(cXOff + 7, cZOff + 7, wor);
         }
     }

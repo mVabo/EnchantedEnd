@@ -1,8 +1,8 @@
 name: EnchantedEnd
-version: 1.0.0
+version: 1.0.1
 main: me.mvabo.verydangerousend.VeryDangerousEnd
 api-version: 1.13
-prefix: [VDE]
+prefix: EnchantedEnd
 load: STARTUP
 authors: [mVabo, OkDexter12]
 description: Makes the end more challenging
