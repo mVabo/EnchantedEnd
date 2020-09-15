@@ -24,15 +24,14 @@ public final class VeryDangerousEnd extends JavaPlugin implements Listener {
         //Register general events
         Bukkit.getPluginManager().registerEvents(this, this);
 
+        end e = new end();
 
         if (endEnabled) {
-            Bukkit.getPluginManager().registerEvents(new end(), this);
+            Bukkit.getPluginManager().registerEvents(e, this);
             Bukkit.getPluginManager().registerEvents(new endWIElistener(), this);
             Bukkit.getPluginManager().registerEvents(new endMobs(), this);
             Bukkit.getPluginManager().registerEvents(new endGravity(), this);
         }
-
-        end e = new end();
 
         BukkitScheduler scheduler = getServer().getScheduler();
         scheduler.scheduleSyncRepeatingTask(this, new Runnable() {
